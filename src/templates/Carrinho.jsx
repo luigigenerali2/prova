@@ -2,8 +2,8 @@ import { useState } from "react";
 import Produto from "./Produto";
 export default function Carrinho(props) {
     const [quantidadeCarrinho, setQuantidadeCarrinho] = useState(0);
-    const handleAdicionarAoCarrinho = () => {
-        setQuantidadeCarrinho(quantidadeCarrinho + 1);
+    const handleAdicionarAoCarrinho = (quantidade) => {
+        setQuantidadeCarrinho(quantidadeCarrinho + quantidade);
       };
     return (
         <div style={{
@@ -52,7 +52,7 @@ export default function Carrinho(props) {
                     margin: '0px',
                     padding: '0px',
                 }}>meu carrinho</p>
-                <Produto onComprarClick={() => handleAdicionarAoCarrinho(1)}/>
+                <Produto onComprarClick={() => handleAdicionarAoCarrinho(1)} />
                 <p style={{
                     margin: '0px',
                     padding: '0px',

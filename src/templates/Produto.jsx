@@ -3,7 +3,7 @@ export default function Produto(props){
     const [quantidade, setQuantidade] = useState(1);
     const handleComprarClick = () => {
     if (props.onComprarClick) {
-      props.onComprarClick(1);
+      props.onComprarClick(quantidade);
     }
     }
     return(
