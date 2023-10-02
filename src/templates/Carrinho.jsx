@@ -1,4 +1,10 @@
+import { useState } from "react";
+import Produto from "./Produto";
 export default function Carrinho(props) {
+    const [quantidadeCarrinho, setQuantidadeCarrinho] = useState(0);
+    const handleAdicionarAoCarrinho = () => {
+        setQuantidadeCarrinho(quantidadeCarrinho + 1);
+      };
     return (
         <div style={{
             display: 'flex',
@@ -46,10 +52,11 @@ export default function Carrinho(props) {
                     margin: '0px',
                     padding: '0px',
                 }}>meu carrinho</p>
+                <Produto onComprarClick={() => handleAdicionarAoCarrinho(1)}/>
                 <p style={{
                     margin: '0px',
                     padding: '0px',
-                }}>{props.qtdCarrinho || 0} item</p>
+                }}>item</p>
             </div>
             <div id='segurança' style={{
                 display: 'flex',

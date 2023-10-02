@@ -1,7 +1,9 @@
 import GradeProdutos from "./componentes/GradeProdutos";
 import BarraBusca from "./templates/BarraBusca";
 import Cabecalho from "./templates/Cabecalho";
+import TelaMostraCarrinho from "./templates/TelaMostraCarrinho"
 import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -18,6 +20,11 @@ function App() {
       <Cabecalho/>
       <BarraBusca/>
       <GradeProdutos listaProdutos={produtos}/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/carrinho" element={<TelaMostraCarrinho/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
