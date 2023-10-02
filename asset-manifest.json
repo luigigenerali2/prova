@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/prova/static/css/main.eefc237f.css",
+    "main.js": "/prova/static/js/main.ace93086.js",
+    "static/media/ricardoeletro.png": "/prova/static/media/ricardoeletro.b6832e7dca74d29262a5.png",
+    "index.html": "/prova/index.html",
+    "main.eefc237f.css.map": "/prova/static/css/main.eefc237f.css.map",
+    "main.ace93086.js.map": "/prova/static/js/main.ace93086.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eefc237f.css",
+    "static/js/main.ace93086.js"
+  ]
+}
